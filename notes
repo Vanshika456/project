@@ -1,0 +1,55 @@
+lecture tabhi dikhenge jb user suscribe krlega nhi to bs courses  dikhenge
+
+ token ---A 2FA barrier to prevent hackers from accessing user data and corporate resources. Using passwords alone makes it easier for hackers to intercept user accounts, but with tokens, users can verify their identity through physical tokens and smartphone applications.
+
+
+ forget and reset pass not working
+
+ subscription not working 
+ 2 bar notification ku ati h -- react strict mode
+
+ req course and contact not working mailtrap not working in short  
+ graph not working
+
+
+s, Node.js developers often use the node-cron library to schedule tasks to run at specific intervals. node-cron provides a way to define cron-like expressions to schedule tasks in Node.js applications. It's commonly used for automating recurring tasks like sending emails, generating reports, or performing database backups.
+
+In a Node.js application, if you're building an API server and your frontend application is hosted on a different domain, you might encounter CORS issues when trying to make requests from the frontend to your backend API. To enable cross-origin requests, you can use the CORS middleware.
+
+
+// why redux and what are uses 
+Prop Drilling:
+Prop drilling occurs when you need to pass data from a parent component to a deeply nested child component. As your application grows, prop drilling can become cumbersome because you have to pass props through multiple intermediate components, even if those components don't directly use the props.
+For example, imagine you have a component hierarchy where data needs to be passed from a top-level component to a deeply nested component. You would have to pass the data as props through each intermediate component, even if some of those components don't need the data.
+Context API:
+The Context API is a feature in React that provides a way to share data between components without having to explicitly pass props through every level of the component tree.
+You can create a context using React.createContext() and then use Provider and Consumer components to provide and consume the context data, respectively.
+While the Context API can alleviate some of the pain of prop drilling, it still requires components to subscribe to the context, and updates to the context can trigger re-renders in all components that consume it.
+Redux:
+Redux is a state management library that provides a centralized store to manage the state of your entire application. It solves the problem of prop drilling and context management by storing application state globally and providing a way to access and update that state from any component in the application.
+With Redux, you define reducers to specify how the application state should change in response to actions. Components can dispatch actions to update the state, and Redux takes care of updating all components that are connected to the relevant parts of the state.
+Redux works well for managing complex application state and for scenarios where multiple components need access to the same data or need to respond to changes in that data.
+In summary, while the Context API can help alleviate prop drilling by providing a way to share data between components, Redux provides a more robust solution for managing application state globally and efficiently updating components in response to state changes. It's particularly useful for larger applications with complex state management needs.
+
+
+// functions ese hi ni reducer se hi chnge hione chiye koi bhi ni ki akr krde 
+
+reducer -- konse store andr store ko chnge krna hai bo chnge
+store --A store is not a class. It's just an object with a few methods on it. 
+
+nonoid is unique id  which we pass with slice 
+
+slice is redcuer big vrsion
+recucr is functionality
+reducer k ander ata hai property or function
+it include state and action
+
+In Redux, an "action payload" refers to the data that is passed along with an action when it is dispatched. Actions are plain JavaScript objects that describe changes to the state, and the payload property is commonly used to carry additional data related to the action.
+
+useSelector:
+useSelector is a hook that allows functional components to extract and subscribe to specific slices of state from the Redux store. It accepts a selector function as an argument, which returns the desired state value from the Redux store.
+Whenever the state value returned by the selector function changes, the component will re-render.
+
+useDispatch:
+useDispatch is a hook that provides access to the dispatch function of the Redux store. You can use it to dispatch actions to the Redux store, which in turn trigger state updates.
+It's typically used inside functional components to dispatch actions in response to user interactions, API responses, or other events.
